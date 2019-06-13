@@ -1,3 +1,5 @@
+import pygame_sdl2
+pygame_sdl2.import_as_pygame()
 import os
 from game import Game
 
@@ -10,8 +12,4 @@ class Pyball(Game):
         Game.__init__(self, 'pyball', 800, 600, 'images/background.jpg', 60)
         pass
 
-def main():
-    Pyball().run()
-
-if __name__ == '__main__':
-    main()
+Pyball().run()
